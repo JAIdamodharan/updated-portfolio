@@ -1,16 +1,86 @@
-# React + Vite
+# 🚀 Professional AI & Software Engineering Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, high-performance portfolio website built with **React 19**, **Vite**, and **Tailwind CSS**. This project features a modern "Cyber-Premium" aesthetic with smooth framer-motion animations, glassmorphism UI, and real-time data integration via Supabase.
 
-Currently, two official plugins are available:
+![Portfolio Preview](public/logo.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **🛡️ Modern Tech Stack**: Built with React 19, Vite, and Tailwind CSS for lightning-fast performance.
+- **🎨 Premium UI/UX**: Custom glassmorphic design system with interactive background blobs and smooth scroll animations.
+- **📱 Fully Responsive**: Optimized for every device, from mobile phones to ultra-wide monitors.
+- **⚡ Dynamic Content**: Projects, skills, and experience sections powered by Supabase for easy updates.
+- **📧 Integrated Contact Form**: Professional contact system with global residency status indicators.
+- **🚀 Production Ready**: Fully optimized for Vercel deployment with SPA routing support.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: [React 19](https://react.dev/), [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Database**: [Supabase](https://supabase.com/)
+- **Deployment**: [Vercel](https://vercel.com/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (Latest LTS version)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/JAIdamodharan/updated-portfolio.git
+   cd updated-portfolio
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Set up Environment Variables**:
+   Create a `.env` file in the root directory and add your Supabase credentials:
+   ```env
+   VITE_SUPABASE_URL=your_supabase_project_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
+
+4. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+## 🏗️ Project Structure
+
+```text
+├── public/               # Static assets (logo, project images)
+├── src/
+│   ├── components/       # Reusable UI components (Hero, Navbar, etc.)
+│   ├── lib/              # Library configurations (Supabase client)
+│   ├── App.jsx           # Main application entry
+│   ├── index.css         # Global styles & Tailwind config
+│   └── main.jsx          # React DOM mounting
+├── vercel.json           # Vercel deployment configuration
+└── vite.config.js        # Vite build configuration
+```
+
+## 🌐 Deployment
+
+This project is configured for one-click deployment on **Vercel**. 
+
+1. Push your code to GitHub.
+2. Import project in Vercel.
+3. Add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` to Vercel Environment Variables.
+4. Deploy!
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Built with 💜 by [Jaishree Damodharan](https://updated-portfolio-jaishree.vercel.app/)
