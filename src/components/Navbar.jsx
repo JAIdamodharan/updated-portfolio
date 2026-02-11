@@ -23,7 +23,9 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'glass py-3' : 'bg-transparent py-6'}`}>
+        <nav className={`fixed w-full z-50 transition-all duration-500 overflow-hidden ${scrolled ? 'bg-white/[0.06] backdrop-blur-2xl py-3 border-b border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.4)]' : 'bg-transparent py-6'}`}>
+            {/* Scrolled Highlight Overlay */}
+            {scrolled && <div className="absolute inset-0 bg-gradient-to-b from-white/[0.04] to-transparent pointer-events-none" />}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     <div className="flex-shrink-0">
@@ -60,7 +62,7 @@ const Navbar = () => {
                     <div className="lg:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="inline-flex items-center justify-center p-2 rounded-xl text-gray-400 hover:text-white glass focus:outline-none"
+                            className="inline-flex items-center justify-center p-2 rounded-xl text-gray-400 hover:text-white bg-white/5 backdrop-blur-lg border border-white/10 focus:outline-none"
                         >
                             {isOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>
@@ -70,7 +72,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="lg:hidden glass mt-2 mx-4 rounded-3xl overflow-hidden animate-in fade-in slide-in-from-top-4 duration-300 shadow-2xl">
+                <div className="lg:hidden bg-background/80 backdrop-blur-2xl mt-2 mx-4 rounded-3xl overflow-hidden animate-in fade-in slide-in-from-top-4 duration-300 shadow-2xl border border-white/10">
                     <div className="px-4 pt-4 pb-6 space-y-2 text-center">
                         {navLinks.map((link) => (
                             <a
