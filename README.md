@@ -1,8 +1,6 @@
-# 🚀 Professional AI & Software Engineering Portfolio
+# My Professional AI & Software Engineering Portfolio
 
 A premium, high-performance portfolio website built with **React 19**, **Vite**, and **Tailwind CSS**. This project features a modern "Cyber-Premium" aesthetic with smooth framer-motion animations, glassmorphism UI, and real-time data integration via Supabase.
-
-![Portfolio Preview](public/logo.png)
 
 ## ✨ Features
 
