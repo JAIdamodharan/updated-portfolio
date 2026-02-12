@@ -9,7 +9,7 @@ A premium, high-performance portfolio website built with **React 19**, **Vite**,
 - **📱 Fully Responsive**: Optimized for every device, from mobile phones to ultra-wide monitors.
 - **⚡ Dynamic Content**: Projects, skills, and experience sections powered by Supabase for easy updates.
 - **📧 Integrated Contact Form**: Professional contact system with global residency status indicators.
-- **🚀 Production Ready**: Fully optimized for Vercel deployment with SPA routing support.
+- **🚀 Production**: Fully optimized for Vercel deployment with SPA routing support.
 
 ## 🛠️ Tech Stack
 
