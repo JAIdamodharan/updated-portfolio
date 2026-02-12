@@ -16,9 +16,9 @@ const Contact = () => {
                 .from('contact_messages')
                 .insert([
                     {
-                        name: formData.name,
-                        email: formData.email,
-                        message: formData.message
+                        name: formData.name.trim(),
+                        email: formData.email.trim(),
+                        message: formData.message.trim()
                     }
                 ]);
 

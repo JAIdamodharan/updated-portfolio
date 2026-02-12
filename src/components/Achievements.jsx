@@ -26,13 +26,15 @@ const Achievements = () => {
         {
             name: 'Mastering Data Structures & Algorithms using C and C++',
             issuer: 'Udemy',
-            date: '2023'
+            date: '2023',
+            link: 'https://www.udemy.com/certificate/UC-c803db46-df21-48b0-b509-1501d8aeac05/'
         },
         {
             name: 'Learn Fundamentals of Computer Programming with C Language',
-            issuer: 'Coursera (Issued Apr 2023)',
+            issuer: 'Coursera',
             date: '2023',
-            id: '2TRGB82HDGLP'
+            id: '2TRGB82HDGLP',
+            link: 'https://www.coursera.org/account/accomplishments/verify/2TRGB82HDGLP'
         }
     ];
 
@@ -80,6 +82,17 @@ const Achievements = () => {
                                     <p className="text-gray-500 text-sm">{cert.issuer} • {cert.date}</p>
                                     {cert.id && <p className="text-xs text-primary/50 font-mono mt-1">ID: {cert.id}</p>}
                                 </div>
+                                {cert.link && (
+                                    <a
+                                        href={cert.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="p-3 bg-white/5 hover:bg-primary/20 text-gray-400 hover:text-primary rounded-xl transition-all"
+                                        title="View Certificate"
+                                    >
+                                        <ExternalLink size={18} />
+                                    </a>
+                                )}
                             </div>
                         ))}
                     </div>

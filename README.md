@@ -9,7 +9,8 @@ A premium, high-performance portfolio website built with **React 19**, **Vite**,
 - **📱 Fully Responsive**: Optimized for every device, from mobile phones to ultra-wide monitors.
 - **⚡ Dynamic Content**: Projects, skills, and experience sections powered by Supabase for easy updates.
 - **📧 Integrated Contact Form**: Professional contact system with global residency status indicators.
-- **🚀 Production**: Fully optimized for Vercel deployment with SPA routing support.
+- **🛡️ Hardened Security**: Industry-standard security headers (CSP, HSTS, XSS protection) and Supabase Row Level Security (RLS) implementation.
+- **🚀 Production Ready**: Fully optimized for Vercel deployment with SPA routing support.
 
 ## 🛠️ Tech Stack
 
@@ -74,6 +75,17 @@ This project is configured for one-click deployment on **Vercel**.
 2. Import project in Vercel.
 3. Add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` to Vercel Environment Variables.
 4. Deploy!
+
+## 🛡️ Security
+
+This application follows modern security best practices:
+
+- **Security Headers**: Configured in `vercel.json` to include Content Security Policy (CSP), X-Frame-Options, and more.
+- **Database Security**: Powered by Supabase **Row Level Security (RLS)**. Public access is restricted to `INSERT` only, with `SELECT`, `UPDATE`, and `DELETE` protected.
+- **Input Sanitization**: Client-side input trimming and validation before database submission.
+- **Zero Vulnerabilities**: Regular dependency audits to ensure a clean supply chain.
+
+For more detailed information, see [SECURITY.md](SECURITY.md).
 
 ## 📄 License
 
